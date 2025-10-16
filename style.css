@@ -1,0 +1,331 @@
+/*------------------------------
+✨ MAISON TASTE Elegant Style
+By Esraa x GPT-5
+-------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Playfair Display", serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --main-color: #d4af37;   /* ذهبي أنيق */
+  --bg-color: #f4f4f4;     /* رمادي فاتح */
+  --dark-color: #222;
+  --text-color: #333;
+}
+
+/*---------------- HEADER ----------------*/
+.header {
+  background-color: var(--dark-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+}
+
+.header .logo {
+  color: var(--main-color);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.header .nav a {
+  color: white;
+  font-size: 20px;
+  margin-left: 40px;
+  transition: 0.3s;
+}
+
+.header .nav a:hover {
+  color: var(--main-color);
+}
+
+/*---------------- LANDING ----------------*/
+.landing {
+  background: url(Image/landing2.jpg) center/cover no-repeat;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.landing .content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.landing h2 {
+  font-size: 70px;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.landing p {
+  font-size: 20px;
+  color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/*---------------- SECTION HEADINGS ----------------*/
+.heading {
+  text-align: center;
+  color: var(--dark-color);
+  font-size: 48px;
+  margin: 50px 0 20px;
+  position: relative;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: var(--main-color);
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+/*---------------- ABOUT ----------------*/
+.about {
+  background-color: var(--bg-color);
+  padding: 60px 80px;
+}
+
+.about .box {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about .image img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.about .content h2 {
+  font-size: 36px;
+  color: var(--main-color);
+  margin-bottom: 15px;
+}
+
+.about .content p {
+  font-size: 18px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/*---------------- OUR CHEF ----------------*/
+.our-chef {
+  background-color: white;
+  padding: 60px 80px;
+}
+
+.our-chef .box {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.our-chef .image {
+  position: relative;
+  flex: 1;
+}
+
+.our-chef .image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  transition: 0.4s;
+}
+
+.our-chef .image:hover img {
+  transform: translateY(-8px);
+}
+
+.our-chef .image h3 {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--main-color);
+  color: white;
+  padding: 8px 25px;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.our-chef .content {
+  flex: 1;
+}
+
+.our-chef .content h2 {
+  font-size: 36px;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.our-chef .content p {
+  font-size: 18px;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/*---------------- MENU ----------------*/
+.menu {
+  background-color: var(--bg-color);
+  padding: 60px 80px;
+}
+
+.menufilter {
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  background-color: var(--dark-color);
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.menufilter:hover {
+  background-color: var(--main-color);
+  color: #222;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.item {
+  background-color: white;
+  color: var(--text-color);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.item h3 {
+  color: var(--main-color);
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.item p {
+  font-size: 16px;
+}
+
+/*---------------- CONTACT ----------------*/
+.contact {
+  padding: 60px 80px;
+  background-color: white;
+}
+
+.contact form {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact form .box,
+.contact form textarea {
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Playfair Display", serif;
+}
+
+.contact form textarea {
+  resize: none;
+  height: 180px;
+}
+
+.contact .btn {
+  padding: 14px;
+  font-size: 18px;
+  background-color: var(--dark-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact .btn:hover {
+  background-color: var(--main-color);
+  color: #222;
+}
+
+/*---------------- RESPONSIVE ----------------*/
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav a {
+    margin: 10px;
+  }
+
+  .about .box, .our-chef .box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menufilter {
+    width: 80%;
+  }
+}
